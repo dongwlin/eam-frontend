@@ -11,9 +11,7 @@ import Header from './header/index.vue'
       <Sider />
     </n-layout-sider>
     <n-layout>
-      <n-layout-header bordered class="p-6">
         <Header />
-      </n-layout-header>
       <n-layout-content bordered content-class="p-6">
         <slot></slot>
       </n-layout-content>
