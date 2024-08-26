@@ -1,6 +1,9 @@
 {
   "hello": "你好，世界",
   "menu": {
-    "overview": "概述"
-  }
+    "overview": "概述",
+    "tasker": "任务器",
+    "settings": "设置"
+  },
+  "page_not_found": "抱歉，您访问的页面不存在。"
 }

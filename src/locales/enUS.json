@@ -1,6 +1,9 @@
 {
   "hello": "Hello World",
   "menu": {
-    "overview": "Overview"
-  }
+    "overview": "Overview",
+    "tasker": "Tasker",
+    "settings": "Settings"
+  },
+  "page_not_found": "Sorry, the page you visited does not exist."
 }

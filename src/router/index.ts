@@ -1,5 +1,5 @@
 import { createWebHashHistory, createRouter } from 'vue-router'
-import type { RouteRecordRaw } from 'vue-router'
+import type {RouteRecordRaw} from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -10,6 +10,24 @@ const routes: RouteRecordRaw[] = [
     name: 'overview',
     path: '/overview',
     component: () => import('@/views/overview/index.vue')
+  },
+  {
+    name: 'tasker',
+    path: '/tasker',
+    component: () => import('@/views/tasker/index.vue')
+  },
+  {
+    name: 'settings',
+    path: '/settings',
+    component: () => import('@/views/settings/index.vue')
+  },
+  {
+    path: '/404',
+    component: () => import('@/views/not-found/index.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/404'
   }
 ]
 

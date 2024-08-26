@@ -7,8 +7,18 @@ type Menu = {
 const menus: Menu[] = [
   {
     key: 'overview',
-    to: '/',
+    to: '/overview',
     icon: 'i-carbon-home'
+  },
+  {
+    key: 'tasker',
+    to: '/tasker',
+    icon: 'i-carbon-task'
+  },
+  {
+    key: 'settings',
+    to: '/settings',
+    icon: 'i-carbon-settings'
   }
 ]
 
