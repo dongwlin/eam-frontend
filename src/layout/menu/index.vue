@@ -53,7 +53,7 @@ const expandIcon = (option: MenuOption) => {
   return null
 }
 
-const handleSelected = (key: string, item: MenuOption) => {
+const handleSelected = (key: string, _: MenuOption) => {
   selected.value = key
 }
 </script>
