@@ -6,6 +6,8 @@ import { useUiStore } from '@/store'
 
 const uiStore = useUiStore()
 
+uiStore.setLocale(uiStore.locale)
+
 const theme = computed(() => {
   return uiStore.isDarkMode ? darkTheme : null
 })
