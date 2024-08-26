@@ -1,4 +1,6 @@
 {
   "hello": "Hello World",
-  "language": "Language"
+  "menu": {
+    "overview": "Overview"
+  }
 }

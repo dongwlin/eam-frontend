@@ -1,4 +1,6 @@
 {
   "hello": "你好，世界",
-  "language": "语言"
+  "menu": {
+    "overview": "概述"
+  }
 }
