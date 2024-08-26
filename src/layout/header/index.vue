@@ -3,10 +3,8 @@ import { ref } from 'vue'
 import { NSpace, NDropdown, NButton } from 'naive-ui'
 import { useUiStore } from '@/store'
 import type { Locale } from '@/i18n'
-import { useI18n } from '@/i18n'
 
 const uiStore = useUiStore()
-const { t } = useI18n()
 
 const languageOptions = [
   {
@@ -31,18 +29,17 @@ const handleLanguageChange = (locale: Locale) => {
 </script>
 
 <template>
-  <div>
-    <n-space align="center" justify="end">
-      <n-dropdown :options="languageOptions" trigger="hover" @select="handleLanguageChange">
-        <n-button>{{ t('language') }}</n-button>
-      </n-dropdown>
-      <n-button @click="uiStore.toggleDarkMode">
-        <template v-if="uiStore.isDarkMode">Light</template>
-        <template v-else>Dark</template>
+  <n-space align="center" justify="end">
+    <n-dropdown :options="languageOptions" trigger="hover" @select="handleLanguageChange">
+      <n-button>
+        <div class="i-carbon-ibm-watson-language-translator w-5 h-5"></div>
       </n-button>
-
-    </n-space>
-  </div>
+    </n-dropdown>
+    <n-button @click="uiStore.toggleDarkMode">
+      <div v-if="uiStore.isDarkMode" class="i-carbon-moon w-5 h-5"></div>
+      <div v-else class="i-carbon-sun w-5 h-5"></div>
+    </n-button>
+  </n-space>
 </template>
 
 <style scoped></style>
