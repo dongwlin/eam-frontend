@@ -10,6 +10,7 @@ export const useUiStore = defineStore(
 
     const isDarkMode = ref<boolean>(osOsTheme.value === 'dark')
     const locale = ref<Locale>('enUS')
+    const collapsed = ref<boolean>(false)
 
     const toggleDarkMode = () => {
       isDarkMode.value = !isDarkMode.value;
@@ -20,11 +21,22 @@ export const useUiStore = defineStore(
       useI18n().setLocale(newLocale)
     }
 
+    const menuCollapse = () => {
+      collapsed.value = true
+    }
+
+    const menuExpand = () => {
+      collapsed.value = false
+    }
+
     return {
       isDarkMode,
       locale,
+      collapsed,
       toggleDarkMode,
-      setLocale
+      setLocale,
+      menuCollapse,
+      menuExpand
     }
   },
   {
