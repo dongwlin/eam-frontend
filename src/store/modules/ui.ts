@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import { useI18n, type Locale } from '@/i18n'
+import { useI18n } from '@/i18n'
+import type { Locale } from '@/locales/types'
 import { useOsTheme } from 'naive-ui'
 
 export const useUiStore = defineStore(
