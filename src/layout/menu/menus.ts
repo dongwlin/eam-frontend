@@ -19,6 +19,11 @@ const menus: Menu[] = [
     key: 'settings',
     to: '/settings',
     icon: 'i-carbon-settings'
+  },
+  {
+    key: 'about',
+    to: '/about',
+    icon: 'i-carbon-information'
   }
 ]
 

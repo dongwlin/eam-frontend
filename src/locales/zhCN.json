@@ -3,7 +3,16 @@
   "menu": {
     "overview": "概述",
     "tasker": "任务器",
-    "settings": "设置"
+    "settings": "设置",
+    "about": "关于"
   },
-  "page_not_found": "抱歉，您访问的页面不存在。"
+  "page_not_found": "抱歉，您访问的页面不存在。",
+  "page_about": {
+    "eam_frontend_repo":"EAM前端仓库",
+    "eam_backend_repo": "EAM后端仓库",
+    "eam_version":"EAM版本",
+    "maa_version": "MaaFramework版本",
+    "go_version":"Go版本",
+    "build_at": "构建时间"
+  }
 }

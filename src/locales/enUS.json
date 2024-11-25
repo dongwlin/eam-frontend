@@ -3,7 +3,16 @@
   "menu": {
     "overview": "Overview",
     "tasker": "Tasker",
-    "settings": "Settings"
+    "settings": "Settings",
+    "about": "About"
   },
-  "page_not_found": "Sorry, the page you visited does not exist."
+  "page_not_found": "Sorry, the page you visited does not exist.",
+  "page_about": {
+    "eam_frontend_repo":"EAM Frontend Repo",
+    "eam_backend_repo": "EAM Backend Repo",
+    "eam_version":"EAM Version",
+    "maa_version": "MaaFramework Version",
+    "go_version":"Go Version",
+    "build_at": "Build At"
+  }
 }
