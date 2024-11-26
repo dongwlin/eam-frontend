@@ -7,6 +7,9 @@
   "page_tasker": {
     "title": "Tasker"
   },
+  "page_log": {
+    "title": "Log"
+  },
   "page_settings": {
     "title": "Settings"
   },

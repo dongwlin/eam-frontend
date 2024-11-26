@@ -17,6 +17,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/tasker/index.vue')
   },
   {
+    name: 'log',
+    path: '/log',
+    component: () => import('@/views/log/index.vue')
+  },
+  {
     name: 'settings',
     path: '/settings',
     component: () => import('@/views/settings/index.vue')

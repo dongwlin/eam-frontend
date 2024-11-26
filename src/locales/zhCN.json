@@ -7,6 +7,9 @@
   "page_tasker": {
     "title": "任务器"
   },
+  "page_log": {
+    "title": "日志"
+  },
   "page_settings": {
     "title": "设置"
   },
