@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { useI18n } from '@/i18n';
+import { NCard } from 'naive-ui'
+
+const { t } = useI18n()
 </script>
 
 <template>
-  <div>tasker</div>
+  <n-card :title="t('page_tasker.title')"></n-card>
 </template>
 
 <style scoped></style>

@@ -2,7 +2,7 @@
 import { getVersions } from '@/api/version';
 import { useI18n } from '@/i18n';
 import { h, isVNode, onMounted, Ref, ref, VNode } from 'vue';
-import { NButton, NIcon, NTable } from 'naive-ui'
+import { NCard, NButton, NIcon, NTable } from 'naive-ui'
 import { LogoGithub } from '@vicons/carbon';
 
 const { t } = useI18n()
@@ -69,7 +69,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <n-table>
+  <n-card :title="t('page_about.title')">
+    <n-table>
     <tbody>
       <tr v-for="item in data" :key="item.id">
         <td class="w-1/2">{{ t(item.key) }}</td>
@@ -82,7 +83,7 @@ onMounted(() => {
       </tr>
     </tbody>
   </n-table>
-
+  </n-card>
 </template>
 
 <style scoped></style>

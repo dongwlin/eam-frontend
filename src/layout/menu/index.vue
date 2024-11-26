@@ -36,7 +36,7 @@ for (const menu of menus) {
         to: menu.to
       },
       {
-        default: () => t(`menu.${menu.key}`)
+        default: () => t(`page_${menu.key}.title`)
       }
     ),
     key: menu.key,

@@ -16,6 +16,11 @@ const menus: Menu[] = [
     icon: 'i-carbon-task'
   },
   {
+    key: 'log',
+    to: '/log',
+    icon: 'i-carbon-cloud-logging'
+  },
+  {
     key: 'settings',
     to: '/settings',
     icon: 'i-carbon-settings'

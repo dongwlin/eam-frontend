@@ -1,13 +1,17 @@
 {
   "hello": "你好，世界",
-  "menu": {
-    "overview": "概述",
-    "tasker": "任务器",
-    "settings": "设置",
-    "about": "关于"
-  },
   "page_not_found": "抱歉，您访问的页面不存在。",
+  "page_overview": {
+    "title": "概述"
+  },
+  "page_tasker": {
+    "title": "任务器"
+  },
+  "page_settings": {
+    "title": "设置"
+  },
   "page_about": {
+    "title": "关于",
     "eam_frontend_repo":"EAM前端仓库",
     "eam_backend_repo": "EAM后端仓库",
     "eam_version":"EAM版本",
