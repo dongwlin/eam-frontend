@@ -1,5 +1,6 @@
 {
   "hello": "Hello World",
+  "under_construction": "Under Construction",
   "page_not_found": "Sorry, the page you visited does not exist.",
   "page_overview": {
     "title": "Overview"
