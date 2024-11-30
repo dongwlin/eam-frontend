@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { h, ref } from 'vue'
-import { NLayoutSider, NMenu } from 'naive-ui'
+import { Component, h, ref } from 'vue'
+import { NLayoutSider, NMenu, NIcon } from 'naive-ui'
 import type { MenuOption } from 'naive-ui'
 import { useI18n } from '@/i18n'
 import { RouterLink } from 'vue-router'
@@ -23,8 +23,8 @@ const processHash = (hash: string): string[] => {
 
 const selected = ref<string>(processHash(location.hash)[0])
 
-const renderIcon = (icon: string) => {
-  return () => h('div', { class: icon })
+const renderIcon = (icon: Component) => {
+  return () => h(NIcon, null, {default: () => h(icon)})
 }
 
 const menuOptions: MenuOption[] = []
@@ -47,9 +47,7 @@ for (const menu of menus) {
 const expandIcon = (option: MenuOption) => {
   const menu = menus.find(value => value.key === option.key)
   if (menu) {
-    return h('div', {
-      class: menu.icon
-    })
+    return h(NIcon, null, {default: ()=> h(menu.icon)})
   }
   return null
 }

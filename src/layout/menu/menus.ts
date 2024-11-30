@@ -1,34 +1,37 @@
-type Menu = {
+import {Home, Task, CloudLogging, Settings, Information} from "@vicons/carbon"
+import { Component } from "vue"
+
+interface Menu {
   key: string
-  to: string,
-  icon: string
+  to: string
+  icon: Component
 }
 
 const menus: Menu[] = [
   {
     key: 'overview',
     to: '/overview',
-    icon: 'i-carbon-home'
+    icon: Home
   },
   {
     key: 'tasker',
     to: '/tasker',
-    icon: 'i-carbon-task'
+    icon: Task
   },
   {
     key: 'log',
     to: '/log',
-    icon: 'i-carbon-cloud-logging'
+    icon: CloudLogging
   },
   {
     key: 'settings',
     to: '/settings',
-    icon: 'i-carbon-settings'
+    icon: Settings
   },
   {
     key: 'about',
     to: '/about',
-    icon: 'i-carbon-information'
+    icon: Information
   }
 ]
 
